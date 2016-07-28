@@ -20,13 +20,16 @@ div > img{
     padding-right: 3em;
 }
 
+.contact-us > img:last-child{
+    padding-right: 0;
+}
+
 table{
     font-size: 2em;
     margin: 0px auto;
     text-align: center;
 }
 td{
-    padding-left: 5px;
     padding-right: 15px;
 }
 
@@ -90,10 +93,11 @@ td{
     background-image: url(./assets/background2.png);
     background-position: center;
     background-repeat: no-repeat;
-    height: 700px;
+    background-size: contain;
+    height: 600px;
     text-align: center;
     margin: 0px auto;
-    border-top: 1px #979797 solid;
+    /*border-top: 1px #979797 solid;*/
 }
 
 .poet-and-I{
