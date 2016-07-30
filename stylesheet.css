@@ -26,11 +26,21 @@ div > img{
 
 table{
     font-size: 2em;
-    margin: 0px auto;
+    margin: 0 auto;
     text-align: center;
 }
 td{
     padding-right: 15px;
+}
+
+.header{
+    background-image: url(./assets/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    text-align: center;
+    margin: 0px auto;
 }
 
 .philosophy{
@@ -47,46 +57,8 @@ td{
     line-height: 0.9;
 }
 
-.head{
-    background-color: #C8E5EE;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    text-align: center;
-}
-
 .logo{
     margin: 0px auto;
-}
-
-.hero-image {
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-.hero-image > picture,
-.hero-image > picture > img {
-    width: 100%;
-}
-
-.stretch-absolute {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.flex-container {
-    align-items: center;
-    display: block;
-    justify-content: center;
-    text-align: center;
-}
-
-.dog-divider{
-    margin-top: -6em;
 }
 
 .about-me{
@@ -97,12 +69,15 @@ td{
     height: 600px;
     text-align: center;
     margin: 0px auto;
-    /*border-top: 1px #979797 solid;*/
+}
+
+.dog-divider{
+    margin-top: -6em;
 }
 
 .poet-and-I{
     width: 50em;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 h2{
@@ -115,5 +90,5 @@ p{
 
 .discription{
     font-size: 1em;
-    margin: 0px auto;
+    margin: 0 auto;
 }
