@@ -31,6 +31,7 @@ table{
 }
 td{
     padding-right: 15px;
+    font-size: 0.5em;
 }
 
 .header{
@@ -44,9 +45,10 @@ td{
 }
 
 .philosophy{
-    width: 40em;
-    margin: 5em auto;
+    width: 60%;
+    margin: 5em auto 15em auto;
     text-align: left;
+    font-size: 1em;
 }
 
 .title {
@@ -65,7 +67,37 @@ td{
     background-image: url(./assets/background2.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.grooming{
+    background-image: url(./assets/background3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.daycare{
+    background-image: url(./assets/background4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.clients{
+    background-image: url(./assets/background5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 600px;
     text-align: center;
     margin: 0px auto;
@@ -75,12 +107,19 @@ td{
     margin-top: -6em;
 }
 
-.poet-and-I{
-    width: 50em;
+.content{
+    width: 80%;
     margin: 0 auto;
+}
+.insta-feed{
+    height: auto;
+    width: 275px;
+    display: inline-block;
+    padding-right: 3.25em;
 }
 
 h2{
+    color: #F26835;
     margin-top: 10px;
     text-align: left;
 }
@@ -88,7 +127,6 @@ p{
     text-align: left;
 }
 
-.discription{
-    font-size: 1em;
-    margin: 0 auto;
+p>a{
+    color: #000000;
 }
