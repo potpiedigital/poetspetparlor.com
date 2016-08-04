@@ -125,6 +125,10 @@ td{
     padding-right: 3.25em;
 }
 
+.insta-feed:last-child{
+    padding-right: 0;
+}
+
 h2{
     color: #F26835;
     margin-top: 10px;
