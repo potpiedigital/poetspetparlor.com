@@ -7,7 +7,8 @@ main {
 
 nav {
     background-color: #000000;
-    width: 100% height: auto;
+    width: 100%;
+    height: auto;
     padding: 10px;
     text-align: center;
 }
@@ -123,3 +124,6 @@ p {
 p>a {
     color: #000000;
 }
+
+
+/*drop down menu*/
