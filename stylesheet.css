@@ -1,9 +1,9 @@
-/*main{
+main{
     background-image: url(./assets/main-background.png);
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
-}*/
+}
 
 nav{
     background-color: #000000;
@@ -61,50 +61,30 @@ td{
 }
 
 .header{
-    background-image: url(./assets/background.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: auto;
     text-align: center;
     margin: 0px auto;
 }
 
 .about-me{
-    background-image: url(./assets/background2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 600px;
     text-align: center;
     margin: 0px auto;
 }
 
 .grooming{
-    background-image: url(./assets/background3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 600px;
     text-align: center;
     margin: 0px auto;
 }
 
 .daycare{
-    background-image: url(./assets/background4.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 600px;
     text-align: center;
     margin: 0px auto;
 }
 
 .clients{
-    background-image: url(./assets/background5.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 600px;
     text-align: center;
     margin: 0px auto;
