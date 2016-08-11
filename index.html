@@ -76,7 +76,20 @@
                 <p><a href="#">Shampoo</a></p>
                 <p><a href="#">Anal Glands</a></p>
             </div>
-
+                <div class="container">
+            <a href="" class="toggle-show">Show more</a>
+            <div class="hide">
+                <p>This is the first content.</p>
+                <a href="" class="toggle-hide">Hide me</a>
+            </div>
+        </div>
+        <div class="container">
+            <a href="" class="toggle-show">Show more 2</a>
+            <div class="hide">
+                <p>This is the second content.</p>
+                <a href="" class="toggle-hide">Hide me</a>
+            </div>
+        </div>
         </section>
         <hr>
         <section class="daycare">
@@ -145,6 +158,24 @@
         <hr>
         <footer></footer>
     </main>
+<script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
+<script type="text/javascript">
+     $('.toggle-show').on('click', function(event) {
+            event.preventDefault();
+            $(event.target)
+                .next()
+                .addClass('show')
+                .removeClass('hide');
+        });
+
+        $('.toggle-hide').on('click', function(event) {
+            event.preventDefault();
+            $(event.target)
+                .parent()
+                .addClass('hide')
+                .removeClass('show');
+        });
+</script>
 </body>
 
 </html>
