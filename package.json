@@ -14,5 +14,10 @@
   "bugs": {
     "url": "https://github.com/potpiedigital/poetspetparlor.com/issues"
   },
-  "homepage": "https://github.com/potpiedigital/poetspetparlor.com#readme"
+  "homepage": "https://github.com/potpiedigital/poetspetparlor.com#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "^3.0.2"
+  }
 }
