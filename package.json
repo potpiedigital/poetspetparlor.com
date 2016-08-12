@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/potpiedigital/poetspetparlor.com#readme",
   "devDependencies": {
+    "glob": "^7.0.5",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^2.0.0",
     "gulp-imagemin": "^3.0.2"
