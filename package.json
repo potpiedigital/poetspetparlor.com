@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "The future home of the Poet's Pet Parlor website.",
   "scripts": {
+    "clean:public": "rm -rf public/",
+    "clean:deploy": "rm -rf deploy/",
     "build": "gulp",
+    "prebuild": "npm run clean:public",
+    "deploy": "gulp deploy",
+    "predeploy": "npm run clean:deploy && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
