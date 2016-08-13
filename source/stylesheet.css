@@ -13,7 +13,7 @@ nav {
     text-align: center;
 }
 
-a {
+nav > a {
     text-decoration: none;
     color: #ffffff;
     margin: 0px 20px;
@@ -125,9 +125,21 @@ p>a {
     color: #000000;
 }
 
-#div_name2 {
-    display: none;
-    margin: 15px 15px 0px 15px;
+.container {
+    margin: 15px 15px 0 15px;
     padding: 5px;
-    border: 1px solid #aaa;
-}
+    text-align: left;
+ }
+
+ .hide {
+    display: none;
+ }
+
+ .show {
+    display: block;
+ }
+
+ .container a {
+    color: #000000;
+    text-align: left;
+  }
