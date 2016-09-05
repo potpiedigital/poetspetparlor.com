@@ -9,12 +9,6 @@
 <body>
     <main>
         <header>
-            <nav>
-                <a href="#">Philosophy</a>
-                <a href="#">Services</a>
-                <a href="#">Daycare/Boarding</a>
-                <a href="#">Clients</a>
-            </nav>
             <div class="mobile-nav">
                 <div class="menu-btn" id="menu-btn">
                     <div></div>
@@ -22,12 +16,12 @@
                     <span></span>
                     <span></span>
                 </div>
-                <div class="responsive-menu">
-                    <ul>
-                        <li>1. Object</li>
-                        <li>2. Object</li>
-                    </ul>
-                </div>
+                <nav class="responsive-menu">
+                    <a href="#">Philosophy</a>
+                    <a href="#">Services</a>
+                    <a href="#">Daycare/Boarding</a>
+                    <a href="#">Clients</a>
+                </nav>
             </div>
             <div class="header">
                 <img src="./assets/Pet_PARLOR1.jpg">
@@ -245,7 +239,7 @@
     $('.toggle-hide').on('click', function(event) {
         event.preventDefault();
         $(event.target)
-            .parent()
+            .closest('.show')
             .addClass('hide')
             .removeClass('show');
     });

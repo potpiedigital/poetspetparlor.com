@@ -1,3 +1,7 @@
+body{
+    margin:0;
+}
+
 main {
     background-image: url(./assets/main-background.png);
     background-position: center;
@@ -144,17 +148,16 @@ p>a {
     text-align: left;
   }
 
-@media (max-width: 520px) {
-    nav {
-        display: none;
-    }
-    .mobile-nav {
-        visibility: hidden;
-    }
+.menu-btn{
+    display: none;
+    padding-left: 0.5em;
+    padding-top: 0.5em
 }
 
 .mobile-nav{
-    visibility: visible;
+    position: absolute;
+    left:0;
+    right: 0;
 }
 
 .menu-btn div {
@@ -179,10 +182,22 @@ p>a {
         z-index: 99;
     }
 
-    .responsive-menu {
-        display: none;
-    }
-
     .expand {
         display: block !important;
     }
+
+@media (max-width: 520px) {
+    nav {
+        display: none;
+    }
+    .responsive-menu {
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+    nav>a{
+        display: block;
+        text-align: left;
+    }
+}
