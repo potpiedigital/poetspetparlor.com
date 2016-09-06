@@ -21,7 +21,9 @@
 
 <body>
 
-<div id="instafeed"></div>
+<div id="instafeed">
+    2967027593
+</div>
 
 <script type="text/javascript">
     var feed = new Instafeed({
@@ -31,25 +33,13 @@
     });
     feed.run();
 </script>
+
 <script type="text/javascript">
-    var loadButton = document.getElementById('load-more');
-    var feed = new Instafeed({
-        // every time we load more, run this function
-        after: function() {
-            // disable button if no more results to load
-            if (!this.hasNext()) {
-                loadButton.setAttribute('disabled', 'disabled');
-            }
-        },
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '2967027593',
     });
-
-    // bind the load more button
-    loadButton.addEventListener('click', function() {
-        feed.next();
-    });
-
-    // run our feed!
-    feed.run();
+    userFeed.run();
 </script>
 </body>
 
