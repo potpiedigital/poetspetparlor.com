@@ -35,7 +35,16 @@ div > img {
     padding-right: 0;
 }
 
-table {
+.groom-time {
+    display: inline-block;
+    font-size: 2em;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 5%;
+}
+
+.daycare-time {
+    display: inline-block;
     font-size: 2em;
     margin: 0 auto;
     text-align: center;
@@ -44,6 +53,17 @@ table {
 td {
     padding-right: 15px;
     font-size: 0.5em;
+}
+
+td > p {
+    padding-right: 15px;
+    font-size: 2em;
+}
+
+th{
+    text-align: center;
+    font-size: 0.75em;
+    font-weight: normal;
 }
 
 .philosophy {
@@ -71,26 +91,8 @@ td {
     margin: 0px auto;
 }
 
-.about-me {
-    height: 600px;
-    text-align: center;
-    margin: 0px auto;
-}
-
-.grooming {
-    height: 600px;
-    text-align: center;
-    margin: 0px auto;
-}
-
-.daycare {
-    height: 600px;
-    text-align: center;
-    margin: 0px auto;
-}
-
-.clients {
-    height: 600px;
+section {
+    height: auto;
     text-align: center;
     margin: 0px auto;
 }
@@ -101,7 +103,7 @@ td {
 
 .content {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 7% auto;
 }
 
 .insta-feed {
