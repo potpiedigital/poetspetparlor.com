@@ -6,41 +6,38 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-    <script type="text/javascript" src="path/to/instafeed.min.js"></script>
-
+    <script type="text/javascript" src="./assets/instafeed.min.js"></script>
     <style>
-        .instafeed{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
+    #instafeed {
+        /*display: flex;*/
+        /*justify-content: justify;*/
+        /*align-content: center;*/
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    html,
+    body{
+        width: 100%;
+    }
+    #instafeed img{
+        height: auto;
+        width: 13.2857143%;
+    }
     </style>
 </head>
 
 <body>
-
-<div id="instafeed">
-    2967027593
-</div>
-
-<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'poetspetparlor',
-        clientId: 'c4a5c21651224cfdb2c58861bd08079c'
-    });
-    feed.run();
-</script>
-
-<script type="text/javascript">
+    <div id="instafeed">
+    </div>
+    <script type="text/javascript">
     var userFeed = new Instafeed({
         get: 'user',
-        userId: '2967027593',
+        userId: 2967027593,
+        clientId: 'c4a5c21651224cfdb2c58861bd08079c',
+        accessToken: '2967027593.1677ed0.d41b3027f7df439f99ec4b0ea2f037b5',
     });
     userFeed.run();
-</script>
+    </script>
 </body>
 
 </html>
