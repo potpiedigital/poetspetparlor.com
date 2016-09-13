@@ -188,6 +188,23 @@ p>a {
         display: block !important;
     }
 
+    #instafeed {
+        /*display: flex;*/
+        /*justify-content: justify;*/
+        /*align-content: center;*/
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    html,
+    body{
+        width: 100%;
+    }
+    #instafeed img{
+        height: auto;
+        width: 13.2857143%;
+        padding: 0.25%;
+    }
+
 @media (max-width: 520px) {
     nav {
         display: none;
