@@ -1,5 +1,5 @@
-body{
-    margin:0;
+body {
+    margin: 0;
 }
 
 main {
@@ -60,7 +60,7 @@ td > p {
     font-size: 2em;
 }
 
-th{
+th {
     text-align: center;
     font-size: 0.75em;
     font-weight: normal;
@@ -104,6 +104,7 @@ section {
 .content {
     width: 80%;
     margin: 0 auto 7% auto;
+    padding-bottom: 4%;
 }
 
 .insta-feed {
@@ -122,6 +123,9 @@ h2 {
     margin-top: 10px;
     text-align: left;
 }
+h3{
+    text-align: left;
+}
 
 p {
     text-align: left;
@@ -135,75 +139,69 @@ p>a {
     margin: 15px 15px 0 15px;
     padding: 5px;
     text-align: left;
- }
+}
 
- .hide {
+.hide {
     display: none;
- }
+}
 
- .show {
+.show {
     display: block;
- }
+}
 
- .container a {
+.container a {
     color: #000000;
     text-align: left;
-  }
+}
 
-.menu-btn{
+.menu-btn {
     display: none;
     padding-left: 0.5em;
     padding-top: 0.5em
 }
 
-.mobile-nav{
+.mobile-nav {
     position: absolute;
-    left:0;
+    left: 0;
     right: 0;
 }
 
 .menu-btn div {
-        position: absolute;
-        left: 100%;
-        top: 64%;
-        padding-right: 8px;
-        margin-top: -0.50em;
-        line-height: 1.2;
-        font-size: 18px;
-        font-weight: 200;
-        vertical-align: middle;
-        z-index: 99;
-    }
+    position: absolute;
+    left: 100%;
+    top: 64%;
+    padding-right: 8px;
+    margin-top: -0.50em;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 200;
+    vertical-align: middle;
+    z-index: 99;
+}
 
-    .menu-btn span {
-        display: block;
-        width: 19px;
-        height: 3px;
-        margin: 4px 0;
-        background: rgb(0, 0, 0);
-        z-index: 99;
-    }
+.menu-btn span {
+    display: block;
+    width: 19px;
+    height: 3px;
+    margin: 4px 0;
+    background: rgb(0, 0, 0);
+    z-index: 99;
+}
 
-    .expand {
-        display: block !important;
-    }
+.expand {
+    display: block !important;
+}
 
-    #instafeed {
-        /*display: flex;*/
-        /*justify-content: justify;*/
-        /*align-content: center;*/
-        max-width: 75%;
-        margin: 0 auto;
-    }
-    html,
-    body{
-        width: 100%;
-    }
-    #instafeed img{
-        height: auto;
-        width: 13.2857143%;
-        padding: 0.25%;
-    }
+#instafeed {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#instafeed img {
+    height: auto;
+    width: 9.2857143%;
+    padding: 0.25%;
+}
 
 @media (max-width: 520px) {
     nav {
@@ -212,10 +210,10 @@ p>a {
     .responsive-menu {
         display: none;
     }
-    .menu-btn{
+    .menu-btn {
         display: block;
     }
-    nav>a{
+    nav>a {
         display: block;
         text-align: left;
     }
