@@ -66,7 +66,7 @@ th {
     font-weight: normal;
 }
 
-ul{
+ul {
     list-style: square outside none;
     margin-top: 0;
 }
@@ -102,7 +102,7 @@ section {
     margin: 0px auto;
 }
 
-.list-info{
+.list-info {
     text-align: left;
 }
 
@@ -116,8 +116,37 @@ section {
     padding-bottom: 4%;
 }
 
-footer > section > .content{
+.copyright {
+    margin: 1% auto;
+    clear: both;
+}
+
+.copyright > p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.copyright > table {
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer > section > .content {
     margin-bottom: 0;
+}
+
+.foot-nav {
+    font-size: 2em;
+    text-align: left;
+    display: inline-block;
+    /*vertical-align: top;*/
+    width: auto;
+}
+
+.content > h1 {
+    color: #F26835;
+    text-align: left;
+    margin-top: 0;
 }
 
 .insta-feed {
@@ -131,7 +160,7 @@ footer > section > .content{
     padding-right: 0;
 }
 
-h1{
+h1 {
     font-size: 3em;
 }
 
@@ -141,12 +170,12 @@ h2 {
     text-align: left;
 }
 
-h3{
+h3 {
     text-align: left;
     margin-bottom: 0.5%;
 }
 
-span{
+span {
     color: #000000;
     font-size: 0.8em;
     font-weight: normal;
