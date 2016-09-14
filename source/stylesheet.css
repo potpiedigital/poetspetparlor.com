@@ -66,6 +66,11 @@ th {
     font-weight: normal;
 }
 
+ul{
+    list-style: square outside none;
+    margin-top: 0;
+}
+
 .philosophy {
     width: 60%;
     margin: 5em auto 15em auto;
@@ -97,6 +102,10 @@ section {
     margin: 0px auto;
 }
 
+.list-info{
+    text-align: left;
+}
+
 .dog-divider {
     margin-top: -6em;
 }
@@ -105,6 +114,10 @@ section {
     width: 80%;
     margin: 0 auto 7% auto;
     padding-bottom: 4%;
+}
+
+footer > section > .content{
+    margin-bottom: 0;
 }
 
 .insta-feed {
@@ -118,13 +131,25 @@ section {
     padding-right: 0;
 }
 
+h1{
+    font-size: 3em;
+}
+
 h2 {
     color: #F26835;
     margin-top: 10px;
     text-align: left;
 }
+
 h3{
     text-align: left;
+    margin-bottom: 0.5%;
+}
+
+span{
+    color: #000000;
+    font-size: 0.8em;
+    font-weight: normal;
 }
 
 p {
@@ -133,25 +158,6 @@ p {
 
 p>a {
     color: #000000;
-}
-
-.container {
-    margin: 15px 15px 0 15px;
-    padding: 5px;
-    text-align: left;
-}
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: block;
-}
-
-.container a {
-    color: #000000;
-    text-align: left;
 }
 
 .menu-btn {
