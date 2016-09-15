@@ -21,7 +21,7 @@ nav > a {
     text-decoration: none;
     color: #ffffff;
     margin: 0px 20px;
-    font-size: 2.5em;
+    font-size: 3vw;
 }
 
 div > img {
@@ -38,7 +38,7 @@ div > img {
 
 .groom-time {
     display: inline-block;
-    font-size: 2em;
+    font-size: 3.5vw;
     margin: 0 auto;
     text-align: center;
     padding-right: 5%;
@@ -46,7 +46,7 @@ div > img {
 
 .daycare-time {
     display: inline-block;
-    font-size: 2em;
+    font-size: 3.5vw;
     margin: 0 auto;
     text-align: center;
 }
@@ -58,12 +58,12 @@ td {
 
 td > p {
     padding-right: 15px;
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 th {
     text-align: center;
-    font-size: 0.75em;
+    font-size: 2.25vw;
     font-weight: normal;
 }
 
@@ -76,7 +76,7 @@ ul {
     width: 60%;
     margin: 5em auto 15em auto;
     text-align: left;
-    font-size: 1em;
+    font-size: 1vw;
 }
 
 .title {
@@ -190,40 +190,6 @@ p>a {
     color: #000000;
 }
 
-.menu-btn {
-    display: none;
-    padding-left: 0.5em;
-    padding-top: 0.5em
-}
-
-.mobile-nav {
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-.menu-btn div {
-    position: absolute;
-    left: 100%;
-    top: 64%;
-    padding-right: 8px;
-    margin-top: -0.50em;
-    line-height: 1.2;
-    font-size: 18px;
-    font-weight: 200;
-    vertical-align: middle;
-    z-index: 99;
-}
-
-.menu-btn span {
-    display: block;
-    width: 19px;
-    height: 3px;
-    margin: 4px 0;
-    background: rgb(0, 0, 0);
-    z-index: 99;
-}
-
 .expand {
     display: block !important;
 }
@@ -240,15 +206,6 @@ p>a {
 }
 
 @media (max-width: 520px) {
-    nav {
-        display: none;
-    }
-    .responsive-menu {
-        display: none;
-    }
-    .menu-btn {
-        display: block;
-    }
     nav>a {
         display: block;
         text-align: left;
