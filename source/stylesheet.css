@@ -20,8 +20,8 @@ nav {
 nav > a {
     text-decoration: none;
     color: #ffffff;
-    margin: 0px 20px;
-    font-size: 3vw;
+    margin: 0px 3%;
+    font-size: 2vw;
 }
 
 div > img {
@@ -209,6 +209,9 @@ p>a {
 }
 
 @media (max-width: 520px) {
+    nav > a {
+        font-size: 3vw
+    }
     .groom-time,
     .daycare-time{
         font-size: 6vw;
