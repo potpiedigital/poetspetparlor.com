@@ -28,17 +28,20 @@ div > img {
     margin-top: 10%;
 }
 
-.contact-us > img {
-    padding-right: 3em;
+.contact-us{
+    margin-top: 5%;
+}
+.contact-us > a {
+    padding-right: 5%;
 }
 
-.contact-us > img:last-child {
+.contact-us > a:last-child {
     padding-right: 0;
 }
 
 .groom-time {
     display: inline-block;
-    font-size: 5.5vw;
+    font-size: 3vw;
     margin: 0 auto;
     text-align: center;
     padding-right: 5%;
@@ -46,7 +49,7 @@ div > img {
 
 .daycare-time {
     display: inline-block;
-    font-size: 5.5vw;
+    font-size: 3vw;
     margin: 0 auto;
     text-align: center;
 }
@@ -206,4 +209,15 @@ p>a {
 }
 
 @media (max-width: 520px) {
+    .groom-time,
+    .daycare-time{
+        font-size: 6vw;
+    }
+    .contact-us{
+        background-color: #000000;
+        margin-bottom: 30%
+    }
+    .philosophy{
+        display: none;
+    }
    }
