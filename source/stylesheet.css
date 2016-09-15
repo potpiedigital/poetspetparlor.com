@@ -38,7 +38,7 @@ div > img {
 
 .groom-time {
     display: inline-block;
-    font-size: 3.5vw;
+    font-size: 5.5vw;
     margin: 0 auto;
     text-align: center;
     padding-right: 5%;
@@ -46,7 +46,7 @@ div > img {
 
 .daycare-time {
     display: inline-block;
-    font-size: 3.5vw;
+    font-size: 5.5vw;
     margin: 0 auto;
     text-align: center;
 }
@@ -206,8 +206,4 @@ p>a {
 }
 
 @media (max-width: 520px) {
-    nav>a {
-        display: block;
-        text-align: left;
-    }
-}
+   }
