@@ -109,6 +109,8 @@ ul {
 
 section {
     height: auto;
+    overflow: hidden;
+    clear: all;
     text-align: center;
     margin: 0px auto;
 }
@@ -118,9 +120,13 @@ section {
 }
 
 .dog-divider {
-    margin-top: -6em;
+    margin-bottom: -9vw;
     height: auto;
     width: 15%;
+}
+
+hr{
+    margin-bottom: 5%;
 }
 
 .content {
