@@ -1,3 +1,10 @@
+@font-face{
+    font-family: Playfair Display; src: url(./assets/playfairdisplay/PlayfairDisplay-Regular.ttf);
+}
+@font-face{
+    font-family: faunaone; src: url(./assets/faunaone/FaunaOne-Regular.ttf);
+}
+
 body {
     margin: 0;
 }
@@ -22,6 +29,7 @@ nav > a {
     color: #ffffff;
     margin: 0px 3%;
     font-size: 2vw;
+    font-family: Playfair Display;
 }
 
 div > img {
@@ -42,6 +50,7 @@ div > img {
 .groom-time {
     display: inline-block;
     font-size: 3vw;
+    font-family: faunaone;
     margin: 0 auto;
     text-align: center;
     padding-right: 5%;
@@ -50,18 +59,15 @@ div > img {
 .daycare-time {
     display: inline-block;
     font-size: 3vw;
+    font-family: faunaone;
     margin: 0 auto;
     text-align: center;
 }
 
 td {
+    font-family: faunaone;
     padding-right: 15px;
     font-size: 0.5em;
-}
-
-td > p {
-    padding-right: 15px;
-    font-size: 2vw;
 }
 
 th {
@@ -73,6 +79,7 @@ th {
 ul {
     list-style: square outside none;
     margin-top: 0;
+    font-family: faunaone;
 }
 
 .philosophy {
@@ -112,12 +119,23 @@ section {
 
 .dog-divider {
     margin-top: -6em;
+    height: auto;
+    width: 15%;
 }
 
 .content {
     width: 80%;
     margin: 0 auto 7% auto;
     padding-bottom: 4%;
+}
+
+.content > p {
+    padding-right: 15px;
+    font-size: 2vw;
+}
+
+aside{
+    float: right;
 }
 
 .copyright {
@@ -141,6 +159,7 @@ footer > section > .content {
 
 .foot-nav {
     font-size: 2em;
+    font-family: faunaone;
     text-align: left;
     display: inline-block;
     /*vertical-align: top;*/
@@ -153,7 +172,7 @@ footer > section > .content {
     margin-top: 0;
 }
 
-.insta-feed {
+/*.insta-feed {
     height: auto;
     width: 275px;
     display: inline-block;
@@ -162,21 +181,24 @@ footer > section > .content {
 
 .insta-feed:last-child {
     padding-right: 0;
-}
+}*/
 
 h1 {
     font-size: 3em;
+    font-family: Playfair Display;
 }
 
 h2 {
     color: #F26835;
     margin-top: 10px;
     text-align: left;
+    font-family: Playfair Display;
 }
 
 h3 {
     text-align: left;
     margin-bottom: 0.5%;
+    font-family: Playfair Display;
 }
 
 span {
@@ -187,6 +209,7 @@ span {
 
 p {
     text-align: left;
+    font-family: faunaone;
 }
 
 p>a {
@@ -204,7 +227,7 @@ p>a {
 
 #instafeed img {
     height: auto;
-    width: 9.2857143%;
+    width: 15.2857143%;
     padding: 0.25%;
 }
 
