@@ -134,7 +134,14 @@ section {
     font-size: 2vw;
 }
 
+.primary{
+    width: 55%;
+    float: left;
+}
+
 aside{
+    width: 20%
+    margin-left: 5%;
     float: right;
 }
 
