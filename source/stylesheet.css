@@ -157,6 +157,12 @@ div > p {
     float: left;
 }
 
+.foot-primary{
+    width: 70%;
+    float: left;
+    margin-bottom: 5%;
+}
+
 aside{
     width: auto;
     height: auto;
@@ -169,7 +175,7 @@ aside>img{
 }
 
 .copyright {
-    margin: 1% auto;
+    margin: auto;
     clear: both;
 }
 
@@ -192,7 +198,7 @@ footer > section > .content {
     font-family: faunaone;
     text-align: left;
     display: inline-block;
-    margin: 0 5% 3% 5%;
+    margin: 0 3% 3% 3%;
 }
 
 .content > h1 {
@@ -210,7 +216,7 @@ footer > section > .content {
 
 .insta-feed:last-child {
     padding-right: 0;
-}*/
+}
 
 h1 {
     font-size: 4vw;
