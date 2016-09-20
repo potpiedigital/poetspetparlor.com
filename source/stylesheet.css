@@ -86,7 +86,7 @@ ul {
     width: 80%;
     margin: 8% auto 10% auto;
     text-align: left;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .title {
@@ -125,19 +125,22 @@ section {
     width: 15%;
 }
 
+#daycare > .dog-divider{
+    padding-top: 5%;
+}
+
 hr{
     margin-bottom: 10%;
 }
 
 .content {
     width: 80%;
-    margin: 0 auto 7% auto;
+    margin: 0 auto;
     padding-bottom: 4%;
 }
 
-.content > p {
-    padding-right: 15px;
-    font-size: 2vw;
+div > p {
+    font-size: 1.5vw;
 }
 
 .primary{
@@ -146,9 +149,14 @@ hr{
 }
 
 aside{
-    width: 20%
-    margin-left: 5%;
+    width: auto;
+    height: auto;
     float: right;
+}
+
+aside>img{
+    width: 10vw;
+    padding: 1%;
 }
 
 .copyright {
