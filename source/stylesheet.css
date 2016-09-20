@@ -157,12 +157,6 @@ div > p {
     float: left;
 }
 
-.foot-primary{
-    width: 70%;
-    float: left;
-    margin-bottom: 5%;
-}
-
 aside{
     width: auto;
     height: auto;
@@ -175,7 +169,7 @@ aside>img{
 }
 
 .copyright {
-    margin: auto;
+    margin: 8% auto 0 auto;
     clear: both;
 }
 
@@ -207,7 +201,7 @@ footer > section > .content {
     margin-top: 0;
 }
 
-/*.insta-feed {
+.insta-feed {
     height: auto;
     width: 275px;
     display: inline-block;
