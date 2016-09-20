@@ -1,8 +1,11 @@
-@font-face{
-    font-family: Playfair Display; src: url(./assets/playfairdisplay/PlayfairDisplay-Regular.ttf);
+@font-face {
+    font-family: Playfair Display;
+    src: url(./assets/playfairdisplay/PlayfairDisplay-Regular.ttf);
 }
-@font-face{
-    font-family: faunaone; src: url(./assets/faunaone/FaunaOne-Regular.ttf);
+
+@font-face {
+    font-family: faunaone;
+    src: url(./assets/faunaone/FaunaOne-Regular.ttf);
 }
 
 body {
@@ -36,9 +39,10 @@ div > img {
     margin-top: 10%;
 }
 
-.contact-us{
+.contact-us {
     margin-top: 5%;
 }
+
 .contact-us > a {
     padding-right: 5%;
 }
@@ -70,11 +74,11 @@ td {
     font-size: 0.5em;
 }
 
-td:last-child{
+td:last-child {
     padding-right: 0;
 }
 
-td>a{
+td>a {
     text-decoration: none;
     color: #000000;
 }
@@ -134,11 +138,11 @@ section {
     width: 15%;
 }
 
-#daycare > .dog-divider{
+#daycare > .dog-divider {
     padding-top: 5%;
 }
 
-hr{
+hr {
     margin-bottom: 10%;
 }
 
@@ -152,18 +156,18 @@ div > p {
     font-size: 1.5vw;
 }
 
-.primary{
+.primary {
     width: 55%;
     float: left;
 }
 
-aside{
+aside {
     width: auto;
     height: auto;
     float: right;
 }
 
-aside>img{
+aside>img {
     width: 10vw;
     padding: 1%;
 }
@@ -266,20 +270,20 @@ p>a {
         font-size: 3vw
     }
     .groom-time,
-    .daycare-time{
+    .daycare-time {
         font-size: 6vw;
     }
-    .contact-us{
+    .contact-us {
         background-color: #000000;
         margin-bottom: 30%
     }
-    .philosophy{
+    .philosophy {
         display: none;
     }
-    aside{
+    aside {
         display: none;
     }
-    .primary{
+    .primary {
         width: 100%;
     }
-   }
+}
