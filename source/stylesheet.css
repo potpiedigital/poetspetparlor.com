@@ -269,7 +269,7 @@ p>a {
     nav > a {
         font-size: 3vw
     }
-    .header>img{
+    .header>img {
         height: 10em;
         width: auto;
     }
@@ -291,18 +291,18 @@ p>a {
         width: 100%;
     }
     div > p {
-    font-size: 3.5vw;
+        font-size: 3.5vw;
     }
     span {
-    font-size: 2.25vw;
-    padding-left: 0;
+        font-size: 2.25vw;
+        padding-left: 0;
     }
-    li{
+    li {
         font-size: 3vw;
     }
     .foot-nav {
-    display: inline;
-    font-size: 1.53em;
-    margin: 3% 3% 5% 3%;
+        display: inline;
+        font-size: 1.53em;
+        margin: 3% 3% 5% 3%;
     }
 }
