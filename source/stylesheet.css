@@ -236,7 +236,7 @@ h3 {
 
 span {
     color: #000000;
-    font-size: 0.8em;
+    font-size: 2vw;
     font-weight: normal;
     padding-left: 5%;
 }
@@ -269,13 +269,17 @@ p>a {
     nav > a {
         font-size: 3vw
     }
+    .header>img{
+        height: 10em;
+        width: auto;
+    }
     .groom-time,
     .daycare-time {
         font-size: 6vw;
     }
     .contact-us {
         background-color: #000000;
-        margin-bottom: 30%
+        margin-bottom: 5%;
     }
     .philosophy {
         display: none;
@@ -285,5 +289,15 @@ p>a {
     }
     .primary {
         width: 100%;
+    }
+    div > p {
+    font-size: 3.5vw;
+    }
+    span {
+    font-size: 2.25vw;
+    padding-left: 0;
+    }
+    li{
+        font-size: 3vw;
     }
 }
