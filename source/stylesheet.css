@@ -8,6 +8,24 @@
     src: url(./assets/faunaone/FaunaOne-Regular.ttf);
 }
 
+/*@font-face {
+    font-family: 'oswaldregular';
+    src: url('./assets/webfontkit/oswald-regular-webfont.woff2') format('woff2'),
+         url('./assets/webfontkit/oswald-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('opensans-regular-webfont.woff2') format('woff2'),
+         url('opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
 body {
     margin: 0;
 }
@@ -37,6 +55,10 @@ nav > a {
 
 div > img {
     margin-top: 10%;
+}
+
+b{
+    visibility: hidden;
 }
 
 .contact-us {
@@ -78,7 +100,7 @@ td:last-child {
     padding-right: 0;
 }
 
-td>a {
+p>a {
     text-decoration: none;
     color: #000000;
 }
@@ -154,6 +176,7 @@ hr {
 
 div > p {
     font-size: 1.5vw;
+    margin-top: 0;
 }
 
 .primary {
