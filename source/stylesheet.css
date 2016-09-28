@@ -10,20 +10,16 @@
 
 @font-face {
     font-family: 'oswaldregular';
-    src: url('./assets/webfontkit/oswald-regular-webfont.woff2') format('woff2'),
-         url('./assets/webfontkit/oswald-regular-webfont.woff') format('woff');
+    src: url('./assets/webfontkit/oswald-regular-webfont.woff2') format('woff2'), url('./assets/webfontkit/oswald-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'open_sansregular';
-    src: url('./assets/webfontkit/opensans-regular-webfont.woff2') format('woff2'),
-         url('./assets/webfontkit/opensans-regular-webfont.woff') format('woff');
+    src: url('./assets/webfontkit/opensans-regular-webfont.woff2') format('woff2'), url('./assets/webfontkit/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body {
@@ -60,7 +56,7 @@ div > img {
     height: auto;
 }
 
-b{
+span {
     visibility: hidden;
 }
 
@@ -69,7 +65,7 @@ b{
 }
 
 .contact-us > a {
-    padding-right: 5%;
+    padding-right: 8%;
 }
 
 .contact-us > a:last-child {
@@ -103,6 +99,11 @@ td:last-child {
     padding-right: 0;
 }
 
+td>a {
+    text-decoration: none;
+    color: #000000;
+}
+
 p>a {
     text-decoration: none;
     color: #000000;
@@ -115,16 +116,21 @@ th {
 }
 
 ul {
-    list-style: square outside none;
+    list-style: square none;
     margin-top: 0;
+    padding: 0;
     font-family: open_sansregular;
+}
+
+li {
+    font-size: 1.25vw;
+    padding-bottom: 1%;
 }
 
 .philosophy {
     width: 80%;
     margin: 8% auto 10% auto;
     text-align: left;
-    font-size: 1.5vw;
 }
 
 .title {
@@ -135,14 +141,16 @@ ul {
     line-height: 0.9;
 }
 
-.logo {
-    margin: 0px auto;
-}
-
 .header {
     height: auto;
     text-align: center;
     margin: 0px auto;
+}
+
+.header > img {
+    height: 15em;
+    width: auto;
+    padding-top: 5%;
 }
 
 section {
@@ -178,7 +186,7 @@ hr {
 }
 
 div > p {
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     margin-top: 0;
 }
 
@@ -213,10 +221,6 @@ aside>img {
     margin: 0 auto;
 }
 
-footer > section > .content {
-    margin-bottom: 0;
-}
-
 .foot-nav {
     font-size: 2.5em;
     font-family: open_sansregular;
@@ -229,6 +233,8 @@ footer > section > .content {
     color: #F26835;
     text-align: left;
     margin-top: 0;
+    font-size: 4vw;
+    font-family: oswaldregular;
 }
 
 .insta-feed {
@@ -242,14 +248,9 @@ footer > section > .content {
     padding-right: 0;
 }
 
-h1 {
-    font-size: 4vw;
-    font-family: oswaldregular;
-}
-
 h2 {
     color: #F26835;
-    margin-top: 10px;
+    margin-top: 5%;
     text-align: left;
     font-family: oswaldregular;
 }
@@ -260,13 +261,6 @@ h3 {
     font-family: oswaldregular;
 }
 
-span {
-    color: #000000;
-    /*font-size: 2vw;*/
-    font-weight: normal;
-    padding-left: 5%;
-}
-
 p {
     text-align: left;
     font-family: open_sansregular;
@@ -275,10 +269,6 @@ p {
 p>a {
     color: #000000;
 }
-
-/*.expand {
-    display: block !important;
-}*/
 
 #instafeed {
     max-width: 100%;
@@ -305,14 +295,10 @@ p>a {
     }
     .contact-us {
         background-color: #000000;
-        /*margin-bottom: 5%;*/
         position: fixed;
         bottom: 0;
         right: 0;
-        left:0;
-    }
-    .philosophy {
-        display: none;
+        left: 0;
     }
     aside {
         display: none;
@@ -323,10 +309,6 @@ p>a {
     div > p {
         font-size: 3.5vw;
     }
-    /*span {
-        font-size: 2.25vw;
-        padding-left: 0;
-    }*/
     li {
         font-size: 3vw;
     }
@@ -334,5 +316,14 @@ p>a {
         display: inline;
         font-size: 1.53em;
         margin: 3% 3% 5% 3%;
+    }
+    .copyright {
+        padding-bottom: 5em;
+    }
+    main {
+        background-image: url(./assets/mobile-background.png);
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
     }
 }
