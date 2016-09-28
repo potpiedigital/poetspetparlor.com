@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: Playfair Display;
     src: url(./assets/playfairdisplay/PlayfairDisplay-Regular.ttf);
 }
@@ -6,9 +6,9 @@
 @font-face {
     font-family: faunaone;
     src: url(./assets/faunaone/FaunaOne-Regular.ttf);
-}
+}*/
 
-/*@font-face {
+@font-face {
     font-family: 'oswaldregular';
     src: url('./assets/webfontkit/oswald-regular-webfont.woff2') format('woff2'),
          url('./assets/webfontkit/oswald-regular-webfont.woff') format('woff');
@@ -19,12 +19,12 @@
 
 @font-face {
     font-family: 'open_sansregular';
-    src: url('opensans-regular-webfont.woff2') format('woff2'),
-         url('opensans-regular-webfont.woff') format('woff');
+    src: url('./assets/webfontkit/opensans-regular-webfont.woff2') format('woff2'),
+         url('./assets/webfontkit/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
-}*/
+}
 
 body {
     margin: 0;
@@ -50,7 +50,7 @@ nav > a {
     color: #ffffff;
     margin: 0px 3%;
     font-size: 2vw;
-    font-family: Playfair Display;
+    font-family: open_sansregular;
 }
 
 div > img {
@@ -76,7 +76,7 @@ b{
 .groom-time {
     display: inline-block;
     font-size: 5vw;
-    font-family: faunaone;
+    font-family: open_sansregular;
     margin: 0 auto;
     text-align: center;
     padding-right: 5%;
@@ -85,13 +85,13 @@ b{
 .daycare-time {
     display: inline-block;
     font-size: 5vw;
-    font-family: faunaone;
+    font-family: open_sansregular;
     margin: 0 auto;
     text-align: center;
 }
 
 td {
-    font-family: faunaone;
+    font-family: open_sansregular;
     padding-right: 2vw;
     font-size: 0.5em;
 }
@@ -114,7 +114,7 @@ th {
 ul {
     list-style: square outside none;
     margin-top: 0;
-    font-family: faunaone;
+    font-family: open_sansregular;
 }
 
 .philosophy {
@@ -216,7 +216,7 @@ footer > section > .content {
 
 .foot-nav {
     font-size: 2.5em;
-    font-family: faunaone;
+    font-family: open_sansregular;
     text-align: left;
     display: inline-block;
     margin: 0 3% 3% 3%;
@@ -241,20 +241,20 @@ footer > section > .content {
 
 h1 {
     font-size: 4vw;
-    font-family: Playfair Display;
+    font-family: oswaldregular;
 }
 
 h2 {
     color: #F26835;
     margin-top: 10px;
     text-align: left;
-    font-family: Playfair Display;
+    font-family: oswaldregular;
 }
 
 h3 {
     text-align: left;
     margin-bottom: 0.5%;
-    font-family: Playfair Display;
+    font-family: oswaldregular;
 }
 
 span {
@@ -266,16 +266,16 @@ span {
 
 p {
     text-align: left;
-    font-family: faunaone;
+    font-family: open_sansregular;
 }
 
 p>a {
     color: #000000;
 }
 
-.expand {
+/*.expand {
     display: block !important;
-}
+}*/
 
 #instafeed {
     max-width: 100%;
