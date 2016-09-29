@@ -49,13 +49,6 @@ nav > a {
     font-family: open_sansregular;
 }
 
-div > img {
-    margin-top: 5%;
-    padding: 0 1.5% 3% 1.5%;
-    width: 10%;
-    height: auto;
-}
-
 span {
     visibility: hidden;
 }
@@ -66,10 +59,17 @@ span {
 
 .contact-us > a {
     padding-right: 8%;
+    height: 10px;
+    width: auto;
 }
 
 .contact-us > a:last-child {
     padding-right: 0;
+}
+
+a>img{
+    width: 8%;
+    height: auto;
 }
 
 .groom-time {
@@ -78,7 +78,7 @@ span {
     font-family: open_sansregular;
     margin: 0 auto;
     text-align: center;
-    padding-right: 5%;
+    padding-right: 8%;
 }
 
 .daycare-time {
@@ -104,11 +104,6 @@ td>a {
     color: #000000;
 }
 
-p>a {
-    text-decoration: none;
-    color: #000000;
-}
-
 th {
     text-align: center;
     font-size: 2.25vw;
@@ -123,7 +118,7 @@ ul {
 }
 
 li {
-    font-size: 1.25vw;
+    font-size: 1em;
     padding-bottom: 1%;
 }
 
@@ -136,6 +131,7 @@ li {
 .title {
     color: #F26835;
     display: block;
+    font-family: oswaldregular;
     font-size: 7.5vw;
     letter-spacing: 4px;
     line-height: 0.9;
@@ -186,13 +182,17 @@ hr {
 }
 
 div > p {
-    font-size: 1.25vw;
+    font-size: 1em;
     margin-top: 0;
 }
 
 .primary {
     width: 55%;
     float: left;
+}
+
+.primary > p{
+    font-size: 1em;
 }
 
 aside {
@@ -237,17 +237,6 @@ aside>img {
     font-family: oswaldregular;
 }
 
-.insta-feed {
-    height: auto;
-    width: 275px;
-    display: inline-block;
-    padding-right: 3.25em;
-}
-
-.insta-feed:last-child {
-    padding-right: 0;
-}
-
 h2 {
     color: #F26835;
     margin-top: 5%;
@@ -266,10 +255,6 @@ p {
     font-family: open_sansregular;
 }
 
-p>a {
-    color: #000000;
-}
-
 #instafeed {
     max-width: 100%;
     margin: 0 auto;
@@ -279,6 +264,17 @@ p>a {
     height: auto;
     width: 15.2857143%;
     padding: 0.25%;
+}
+
+.insta-feed {
+    height: auto;
+    width: 275px;
+    display: inline-block;
+    padding-right: 3.25em;
+}
+
+.insta-feed:last-child {
+    padding-right: 0;
 }
 
 @media (max-width: 520px) {
@@ -291,6 +287,9 @@ p>a {
     }
     .groom-time,
     .daycare-time {
+        font-size: 8vw;
+    }
+    th{
         font-size: 6vw;
     }
     .contact-us {
@@ -313,17 +312,49 @@ p>a {
         font-size: 3vw;
     }
     .foot-nav {
-        display: inline;
+        display: inline-block;
         font-size: 1.53em;
         margin: 3% 3% 5% 3%;
     }
     .copyright {
-        padding-bottom: 5em;
+        padding-bottom: 2em;
     }
     main {
         background-image: url(./assets/mobile-background.png);
         background-position: center;
         background-repeat: repeat;
         background-size: cover;
+    }
+}
+
+@media (max-width: 927px){
+    .foot-nav{
+        display: inline-block;
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+    .primary{
+        width: 100%;
+    }
+    .primary>h3,
+    .list-info>h3{
+        font-size: 3vw;
+    }
+    aside{
+        float: left;
+        width: 100%;
+    }
+    .content>aside{
+        padding-bottom: 5%;
+    }
+    .content > aside > img{
+        display: inline-block;
+        padding: 0;
+    }
+    .content > aside > img:last-child{
+        display: none;
+    }
+    br{
+        display: none;
     }
 }
