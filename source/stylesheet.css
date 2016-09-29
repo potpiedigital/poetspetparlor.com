@@ -67,7 +67,7 @@ span {
     padding-right: 0;
 }
 
-a>img{
+a>img {
     width: 8%;
     height: auto;
 }
@@ -191,7 +191,7 @@ div > p {
     float: left;
 }
 
-.primary > p{
+.primary > p {
     font-size: 1em;
 }
 
@@ -289,7 +289,7 @@ p {
     .daycare-time {
         font-size: 8vw;
     }
-    th{
+    th {
         font-size: 6vw;
     }
     .contact-us {
@@ -327,34 +327,34 @@ p {
     }
 }
 
-@media (max-width: 927px){
-    .foot-nav{
+@media (max-width: 927px) {
+    .foot-nav {
         display: inline-block;
         padding-left: 5%;
         padding-top: 5%;
     }
-    .primary{
+    .primary {
         width: 100%;
     }
     .primary>h3,
-    .list-info>h3{
+    .list-info>h3 {
         font-size: 3vw;
     }
-    aside{
+    aside {
         float: left;
         width: 100%;
     }
-    .content>aside{
+    .content>aside {
         padding-bottom: 5%;
     }
-    .content > aside > img{
+    .content > aside > img {
         display: inline-block;
         padding: 0;
     }
-    .content > aside > img:last-child{
+    .content > aside > img:last-child {
         display: none;
     }
-    br{
+    br {
         display: none;
     }
 }
