@@ -4,7 +4,7 @@ export default () => {
     return gulp
         .src([
             'source/*.{ico,icns,txt}',
-            'source/**/*-Regular.ttf',
+            'source/**/*.{eot,otf,ttf,svg,woff,woff2}',
         ])
         .pipe(gulp.dest('public'));
 }
