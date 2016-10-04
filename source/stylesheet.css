@@ -165,6 +165,7 @@ section {
 
 .dog-divider {
     margin-bottom: -9vw;
+    box-shadow: 0 2px 2px black;
     height: auto;
     width: 15%;
 }
