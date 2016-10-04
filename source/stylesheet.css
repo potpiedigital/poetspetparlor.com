@@ -228,8 +228,13 @@ aside>img {
     font-size: 2.5em;
     font-family: open_sansregular;
     text-align: left;
+    vertical-align: top;
     display: inline-block;
-    margin: 0 3% 3% 3%;
+    margin: 3%;
+}
+
+iframe{
+    padding-bottom: 4%;
 }
 
 .content > h1 {
@@ -312,9 +317,20 @@ p {
     }
 }
 
+@media (max-width: 769px){
+    iframe{
+        width: 460px;
+        height: auto;
+    }
+}
+
 @media (max-width: 520px) {
     nav > a {
         font-size: 3vw
+    }
+     iframe{
+        width: auto;
+        height: auto;
     }
     .header>img {
         height: 10em;
@@ -357,10 +373,10 @@ p {
     li {
         font-size: 1em;
     }
-    .foot-nav {
-        display: inline-block;
-        font-size: 1.53em;
-        margin: 3% 3% 5% 3%;
+    .foot-nav{
+        display: inline;
+        font-size: 1.75em;
+        margin: 3% 3% 5% 0;
     }
     .copyright {
         padding-bottom: 2em;
