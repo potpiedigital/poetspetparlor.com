@@ -169,10 +169,6 @@ section {
     width: 15%;
 }
 
-#daycare > .dog-divider {
-    padding-top: 5%;
-}
-
 hr {
     margin-bottom: 10%;
 }
@@ -216,6 +212,11 @@ aside>img {
 .copyright > p {
     text-align: center;
     margin: 0 auto;
+}
+
+.copyright>p>img{
+    height: 1em;
+    width:auto;
 }
 
 .copyright > table {
@@ -264,7 +265,7 @@ p {
 
 #instafeed img {
     height: auto;
-    width: 15.2857143%;
+    width: 32%;
     padding: 0.25%;
 }
 
@@ -332,6 +333,17 @@ p {
         bottom: 0;
         right: 0;
         left: 0;
+        height: 2.5em;
+    }
+    .contact-us>a{
+        padding: 8%;
+        margin-top: 1.75em;
+    }
+    .contact-us > a:last-child {
+    padding-right: 8%;
+    }
+    .contact-us>a>img{
+        padding-top: 0.25em;
     }
     aside {
         display: none;
