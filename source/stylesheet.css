@@ -245,6 +245,8 @@ iframe{
     margin-top: 0;
     font-size: 4vw;
     font-family: oswaldregular;
+    letter-spacing: 4px;
+    line-height: 0.9;
 }
 
 h2 {
