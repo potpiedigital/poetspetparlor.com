@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <title>Clicky Hidy</title>
+    <style type="text/css">
+        /* this could also go in a separate file */
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        div {
+            border: 1px solid #aaa;
+            margin: 15px 15px 0 15px;
+            padding: 5px;
+        }
+
+        a {
+            color: blue;
+            border-bottom: 1px dotted blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <a href="" class="toggle-show">Show more</a>
+            <div class="hide">
+                <p>This is the first content.</p>
+                <a href="" class="toggle-hide">Hide me</a>
+            </div>
+        </div>
+        <div class="container">
+            <a href="" class="toggle-show">Show more</a>
+            <div class="hide">
+                <p>This is the second content.</p>
+                <a href="" class="toggle-hide">Hide me</a>
+            </div>
+        </div>
+    </main>
+    <script>
+        /* this could also go in a separate file */
+        function onClickShow(event) {
+             // prevents the click event from trying to navigate to the anchor's href
+            event.preventDefault();
+
+            var target = event.target; // this is the thing you clicked on (in this case .toggle-show)
+            var elementToShow = target.nextElementSibling; // because .toggle-show and the div you want to show are 'siblings'
+
+            // we need to remove the hide class
+            elementToShow.classList.remove('hide');
+            // ... and add the show class
+            elementToShow.classList.add('show');
+
+            // another way to do this would be like this:
+            // elementToShow.className = 'show';
+            // ... but it's less flexible. Doing that will blow away any other classes applied to the element.
+            // What if you have more than just show/hide on the element?
+        }
+
+        function onClickHide(event) {
+             // prevents the click event from trying to navigate to the anchor's href
+            event.preventDefault();
+
+            var target = event.target; // this is the thing you clicked on (in this case .toggle-hide)
+            var elementToHide = target.parentNode; // because .toggle-hide is a 'child' of the div you want to hide
+
+            // we need to remove the hide class
+            elementToHide.classList.remove('show');
+            // ... and add the show class
+            elementToHide.classList.add('hide');
+
+            // Same as above, you could use className, but it'll clobber anything else that happens to be set in
+            // the class attribute of the element you want to hide.
+        }
+
+        // querySelectorAll is kind of like getElementById, but it takes a CSS selector (as opposed to an id attribute
+        // value) and returns a *list* of elements (not just one) ... the list is why we have to use forEach.
+        document.querySelectorAll('.toggle-show').forEach(function(element) {
+            // forEach is a function that takes another function, the function you pass in will get called with each
+            // element in the list ... if you uncomment the console.log below you should see this run 2 times, once for
+            // each of the two anchor tags with the .toggle-show class
+            // console.log(element);
+            element.addEventListener('click', onClickShow);
+        });
+
+        document.querySelectorAll('.toggle-hide').forEach(function(element) {
+            // same as above, but for the two .toggle-hide anchors
+            // console.log(element);
+            element.addEventListener('click', onClickHide);
+        });
+
+        // elements can 'listen' to a bunch of different events, one of those events is mouse clicks, here
+        // we're telling the element to "listen for the 'click' event, and call this function whenever it
+        // happens" ... event "listeners" (also sometimes called "handlers") get called with an event object
+        // that has some information about what happened and a bunch of properties that help you figure out
+        // what to do about a given event (see above, in the onClickShow function)
+
+        // doing all of this with "vanilla" JavaScript (that is to say, "native browser APIs") is not very
+        // common, it's a lot of writing, it used to be that some browsers (mostly IE) did things differently
+        // than the rest ... this is why jQuery got so popular, it smooths over and shortens a bunch of the
+        // above, here's what it'd look like if we had jQuery on the page:
+
+        /*
+        $('.toggle-show').on('click', function(event) {
+            event.preventDefault();
+            $(event.target)
+                .next()
+                .addClass('show')
+                .removeClass('hide');
+        });
+
+        $('.toggle-hide').on('click', function(event) {
+            event.preventDefault();
+            $(event.target)
+                .parent()
+                .addClass('hide')
+                .removeClass('show');
+        });
+        */
+
+       // you can see that this is a bunch shorter, but also kind of clearer (I guess?) ... IDK, once you're
+       // used to it it's a lot easier to read and write
+    </script>
+</body>
+</html>
