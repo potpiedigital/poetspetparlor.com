@@ -58,7 +58,7 @@ const steps = [{
     cmd: `git commit --allow-empty -am "${commitMsg} - \`date +\"%D %T\"\` [ci skip]"`,
     opts: { cwd: deployDir },
 },{
-    cmd: `git push`,
+    cmd: `git push --force --quiet > /dev/null 2>&1`,
     opts: { cwd: deployDir },
 }];
 
@@ -74,5 +74,9 @@ export default () => {
                 });
             });
         });
-    }, Promise.resolve());
+    }, Promise.resolve())
+    .catch((reason) => {
+        console.log(reason);
+        process.exit(1);
+    });
 }
