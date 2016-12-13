@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="./assets/instafeed.min.js"></script>
+    <style>
+    #instafeed {
+        /*display: flex;*/
+        /*justify-content: justify;*/
+        /*align-content: center;*/
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+/*save for other use (mobile nav menu)*/
+    /*.menu-btn {
+    display: none;
+    padding-left: 0.5em;
+    padding-top: 0.5em
+}
+
+.mobile-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.menu-btn div {
+    position: absolute;
+    left: 100%;
+    top: 64%;
+    padding-right: 8px;
+    margin-top: -0.50em;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 200;
+    vertical-align: middle;
+    z-index: 99;
+}
+
+.menu-btn span {
+    display: block;
+    width: 19px;
+    height: 3px;
+    margin: 4px 0;
+    background: rgb(0, 0, 0);
+    z-index: 99;
+}
+@media (max-width: 520px) {
+    nav {
+        display: none;
+    }
+    .responsive-menu {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+    nav>a {
+        display: block;
+        text-align: left;
+    }
+}*/
+    html,
+    body{
+        width: 100%;
+    }
+    #instafeed img{
+        height: auto;
+        width: 13.2857143%;
+        padding: 0.25%;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="instafeed"></div>
+    <script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: 2967027593,
+        clientId: 'c4a5c21651224cfdb2c58861bd08079c',
+        accessToken: '2967027593.1677ed0.d41b3027f7df439f99ec4b0ea2f037b5',
+    });
+    userFeed.run();
+    </script>
+    <!-- <script type="text/javascript">
+    $('.toggle-show').on('click', function(event) {
+        event.preventDefault();
+        $(event.target)
+            .next()
+            .addClass('show')
+            .removeClass('hide');
+    });
+
+    $('.toggle-hide').on('click', function(event) {
+        event.preventDefault();
+        $(event.target)
+            .closest('.show')
+            .addClass('hide')
+            .removeClass('show');
+    });
+    </script>
+    <script type="text/javascript">
+    jQuery(function($) {
+        $('.menu-btn').click(function() {
+            $('.responsive-menu').toggleClass('expand')
+        })
+    })
+    </script>-->
+</body>
+
+</html>
