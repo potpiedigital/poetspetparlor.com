@@ -1,25 +1,13 @@
-/*@font-face {
-    font-family: Playfair Display;
-    src: url(./assets/playfairdisplay/PlayfairDisplay-Regular.ttf);
-}
-
-@font-face {
-    font-family: faunaone;
-    src: url(./assets/faunaone/FaunaOne-Regular.ttf);
-}*/
-
 @font-face {
     font-family: 'oswaldregular';
-    src: url('./assets/webfontkit/oswald-regular-webfont.woff2') format('woff2'),
-        url('./assets/webfontkit/oswald-regular-webfont.woff') format('woff');
+    src: url('./assets/webfontkit/oswald-regular-webfont.woff2') format('woff2'), url('./assets/webfontkit/oswald-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'open_sansregular';
-    src: url('./assets/webfontkit/opensans-regular-webfont.woff2') format('woff2'),
-        url('./assets/webfontkit/opensans-regular-webfont.woff') format('woff');
+    src: url('./assets/webfontkit/opensans-regular-webfont.woff2') format('woff2'), url('./assets/webfontkit/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -216,9 +204,9 @@ aside>img {
     margin: 0 auto;
 }
 
-.copyright>p>img{
+.copyright>p>img {
     height: 1em;
-    width:auto;
+    width: auto;
 }
 
 .copyright > table {
@@ -235,7 +223,7 @@ aside>img {
     margin: 3%;
 }
 
-iframe{
+iframe {
     padding-bottom: 4%;
 }
 
@@ -321,8 +309,8 @@ p {
     }
 }
 
-@media (max-width: 769px){
-    iframe{
+@media (max-width: 769px) {
+    iframe {
         width: 460px;
         height: auto;
     }
@@ -332,7 +320,7 @@ p {
     nav > a {
         font-size: 3vw
     }
-     iframe{
+    iframe {
         width: auto;
         height: auto;
     }
@@ -355,14 +343,14 @@ p {
         left: 0;
         height: 2.5em;
     }
-    .contact-us>a{
+    .contact-us>a {
         padding: 8%;
         margin-top: 1.75em;
     }
     .contact-us > a:last-child {
-    padding-right: 8%;
+        padding-right: 8%;
     }
-    .contact-us>a>img{
+    .contact-us>a>img {
         padding-top: 0.25em;
     }
     aside {
@@ -377,7 +365,7 @@ p {
     li {
         font-size: 1em;
     }
-    .foot-nav{
+    .foot-nav {
         display: inline;
         font-size: 1.75em;
         margin: 3% 3% 5% 0;
