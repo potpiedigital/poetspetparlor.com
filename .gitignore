@@ -39,3 +39,5 @@ jspm_packages
 deploy
 design
 public
+
+.cache
