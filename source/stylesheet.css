@@ -194,9 +194,14 @@ div > p {
     margin-top: 0;
 }
 
+.columns {
+    display: flex;
+    justify-content: space-around;
+}
+
 .primary {
-    width: 55%;
-    float: left;
+    width: 65%;
+    /*float: left;*/
 }
 
 .primary > p {
@@ -206,7 +211,7 @@ div > p {
 aside {
     width: 30%;
     height: auto;
-    float: right;
+    /*float: right;*/
 }
 
 aside>img {
@@ -303,16 +308,22 @@ p {
         padding-left: 5%;
         padding-top: 5%;
     }
+
+    .columns {
+        flex-direction: column;
+    }
     .primary {
         width: 100%;
+        order: 1
     }
     .primary > h3,
     .list-info > h3 {
         font-size: 1.15em;
     }
     aside {
-        float: left;
+        /*float: left;*/
         width: 100%;
+        order: 2;
     }
     .content > aside {
         padding-bottom: 5%;
