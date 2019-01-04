@@ -1,14 +1,32 @@
 language: node_js
+
 node_js:
-    - stable
+  - stable
+
+cache: yarn
+
 branches:
-    only:
+  only:
     - master
+
 script:
-    - npm test
+  - yarn test
+
 env:
-    global:
-    - GH_REPO: github.com/${TRAVIS_REPO_SLUG}
+  global:
     - secure: DJYkSNvg1LzYp3tv14u33TSvAZL+HpD1WjzAOl3VWh0jv9a+Tl+EVssB4RfLZbQHJ46MxvKzCnAOwxIqDuCgiCc+RJYKTgi8s5VZJzQ5ToNWIxtmDASHYI1+G8uHC60xy6s7QHuKVylCpFGEolRfVMPnNow13HSH1KPHb+C2D+Bk71f/TowKts/Rx43OmUu8FUp5dEG+eNA1a0axTTKDEAET/iH75++KPlHZ65VEu6Fg1/s22sSyrSPPmFLdU1CVRNDRCTJyPu5ntDZUtzThA9q9q58TrtAAyBBV8fb69h0HX61zPdQ9VAw1chtDsu74GqUydFXMlJPa1OeSSOlbVEakCZK5ZoqknounIrqh0RG+P7K/vOxEMr85CUQf69e3DNQwB/1P89MoeFiAdUIUlbJf6/zZCBjcp1fX5tmwU0UKxOVaUSZr91I/aSO/cMeQcAhn+NtnaCij6luIMy7p3EAuFExDAoGgD49bl3zHpdYLi8JFJ3KnZMq7i1GDhCJspMgqZQRPFgNu5hlZ8DKHRkXsgW9ThZ2pDsLOUmHxK1Lb25hwF/sdIajYtczE0tgu+XB6skWyKs1JAMjrDz6j4EPRan2UcqnIG4W6tXUry6x4m2l0oBG9w8sFZT+403UeamL6v/JuuBwBk3yQFcHWEKOCd9WYuDawyX8pWEz5uKM=
-after_success:
-    - npm run deploy
+
+before_deploy:
+  - yarn build
+
+deploy:
+  - provider: pages
+    repo: potpiedigital/poetspetparlor.com
+    target_branch: gh-pages
+    github_token: "$GH_TOKEN"
+    allow_empty_commit: true
+    skip_cleanup: true
+    keep_history: true
+    local_dir: public/
+    on:
+      branch: master
