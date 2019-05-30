@@ -4,12 +4,9 @@
   "description": "The future home of the Poet's Pet Parlor website.",
   "private": true,
   "scripts": {
-    "clean:public": "rm -rf public/",
-    "clean:deploy": "rm -rf deploy/",
-    "start": "parcel source/index.html --out-dir public --global Instafeed",
-    "build": "parcel build source/index.html --out-dir public --public-url /",
-    "prebuild": "yarn clean:public",
-    "predeploy": "yarn clean:deploy && yarn build",
+    "clean": "rm -rf .cache/ coverage/ dist/",
+    "start": "parcel source/index.html",
+    "build": "parcel build source/index.html --public-url /",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
