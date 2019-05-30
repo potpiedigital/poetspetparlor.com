@@ -20,11 +20,12 @@ env:
 deploy:
   - provider: pages
     repo: potpiedigital/poetspetparlor.com
+    fqdn: poetspetparlor.com
     target_branch: gh-pages
-    github_token: "$GH_TOKEN"
+    github_token: $GH_TOKEN
     allow_empty_commit: true
     skip_cleanup: true
     keep_history: true
-    local_dir: public/
+    local_dir: dist/
     on:
       branch: master
