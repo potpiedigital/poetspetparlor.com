@@ -11,22 +11,21 @@ branches:
 
 script:
   - yarn test
+  - yarn build
 
 env:
   global:
     - secure: Z5YWYD051k3lxU9E1+npFRndZDdWXHvv4YBrjBrzfN798UD9wIDI1SdN7GzTANmQ4v+f2PpBFWWSRCq7gxqVU3iFuk1FzqZZcvlXU4FKDXiTowi1pPPCD15TG++AG0F+ZvssFYpBPH3rJ+66nqMhRpKiOWnPoUFP+WR43sZ621XvHDqujd7iYHEiaP6jdz+itH8qcApXpyEqHyjAGQQmjcJsmY0aEitfjnBpbmg7DA/8MX+NkMTKj+5QR5+SKekA9wsodAgH19CEtQ++CORbAnzClxerEKxFmcoqD9UohWg+xDdLnoBF4GztxFUiHB43ZAJMvLiLKQCbWdrnKUbkksME2aLsh+cKfr355b/duCT+dcudRlUJrXdDyySRroO6u9eH7G1IPdYldDnidnZeewHd58YucvgjAHD07wEvi6l3PUQUj88sZjESHBsFP0SAmgClALgbLT1JuNqmb2ga7Dn7tnfj8Xss+ZaFqTklumjy/k+9qN3OMbaEXYtqC3IDpATXVcietv1Ha0g2JhUhccrHtOHpeHvCvkS2v1a+ss5noG4vKGGw1CMGGAmaZnoPip4ca24b+e42YU8IPj6/tWITIec10WznP9Nu6LTjK2H24fpQ3NHU8af5WYL//D97qi/kBuv1FoePFd0d/GeZNdRHwOn0SaRF6Kv4xkAWhPI=
 
-before_deploy:
-  - yarn build
-
 deploy:
   - provider: pages
     repo: potpiedigital/poetspetparlor.com
+    fqdn: poetspetparlor.com
     target_branch: gh-pages
-    github_token: "$GH_TOKEN"
+    github_token: $GH_TOKEN
     allow_empty_commit: true
     skip_cleanup: true
     keep_history: true
-    local_dir: public/
+    local_dir: dist/
     on:
       branch: master
