@@ -21,7 +21,7 @@
   },
   "homepage": "https://potpiedigital.github.io/poetspetparlor.com",
   "dependencies": {
-    "instafeed.js": "1.4.1"
+    "instafeed.js": "2.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.13.16",
